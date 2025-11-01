@@ -1,8 +1,8 @@
 # Blogr
 
-A full-stack blogging platform where developers can create, edit, and publish technical articles with authentication.
+A full-stack blogging platform where users can create and publish articles.
 
-**[Live Site](https://your-app.vercel.app)** | **Tech Stack:** Next.js, Prisma, NextAuth, PostgreSQL, TypeScript
+**[Live Site](https://kyoriku-blogr-nextjs-prisma.vercel.app)** | **Tech Stack:** Typescript, Next.js, React, Prisma, PostgreSQL, NextAuth
 
 **Key Features:** GitHub OAuth authentication • Markdown support • Draft/publish workflow • Server-side rendering • Type-safe database queries
 
