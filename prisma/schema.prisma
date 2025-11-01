@@ -3,8 +3,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("POSTGRES_URL_NON_POOLING")
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL") // Uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // Used for migrations
 }
 
 model Post {
@@ -15,7 +16,7 @@ model Post {
   author    User?   @relation(fields: [authorId], references: [id])
   authorId  String?
 
-  @@map("Post") // maps to your existing PostgreSQL table
+  @@map("Post")
 }
 
 model Account {
@@ -62,7 +63,7 @@ model User {
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 
-  @@map("User") // maps to your existing PostgreSQL table
+  @@map("User")
 }
 
 model VerificationToken {
