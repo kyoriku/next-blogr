@@ -17,29 +17,29 @@ export const authOptions: NextAuthOptions = {
   session: {
     strategy: 'jwt',
   },
-  // callbacks: {
-  //   async session({ session, token }: { session: Session; token: JWT }) {
-  //     if (session?.user) {
-  //       session.user.id = token.sub!;
-  //     }
-  //     return session;
-  //   },
-  //   async jwt({ token, user }: { token: JWT; user?: User }) {
-  //     if (user) {
-  //       token.id = user.id;
-  //     }
-  //     return token;
-  //   },
-  // },
   callbacks: {
-    async session({ session, token }) {
-      if (session?.user && token.email) {
-        session.user.email = token.email;
+    async session({ session, token }: { session: Session; token: JWT }) {
+      if (session?.user) {
+        session.user.id = token.sub!;
       }
       return session;
     },
+    async jwt({ token, user }: { token: JWT; user?: User }) {
+      if (user) {
+        token.id = user.id;
+      }
+      return token;
+    },
   },
-  debug: true,
+  // callbacks: {
+  //   async session({ session, token }) {
+  //     if (session?.user && token.email) {
+  //       session.user.email = token.email;
+  //     }
+  //     return session;
+  //   },
+  // },
+  // debug: true,
 };
 
 const authHandler: NextApiHandler = (req, res) => NextAuth(req, res, authOptions);
