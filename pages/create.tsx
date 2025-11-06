@@ -70,7 +70,7 @@ const Draft: React.FC = () => {
                 placeholder="Write your content here..."
                 rows={16}
                 value={content}
-                className="w-full px-4 py-2.5 text-base bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-md focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all outline-none resize-y font-mono leading-relaxed text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600"
+                className="w-full px-4 py-2.5 text-sm bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-md focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all outline-none resize-y font-mono leading-relaxed text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600"
                 required
               />
             </div>
