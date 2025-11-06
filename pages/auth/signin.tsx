@@ -12,7 +12,7 @@ export default function SignIn({ providers }: { providers: any }) {
       <div className="w-full max-w-md p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 text-center">
         {/* Logo / Branding */}
         <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white mb-2">
-          NextBlog
+          NextBlogr
         </h1>
         <p className="text-sm text-slate-600 dark:text-slate-400 mb-6">
           Sign in to continue

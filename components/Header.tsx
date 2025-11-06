@@ -21,7 +21,7 @@ const Header: React.FC = () => {
               href="/"
               className="text-xl font-bold text-slate-900 dark:text-white hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
             >
-              NextBlog
+              NextBlogr
             </Link>
 
             {/* Desktop Links */}
