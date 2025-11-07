@@ -1,12 +1,12 @@
-# Blogr
+# NextBlogr
 
 A full-stack blogging platform where users can create and publish articles.
 
-**[Live Site](https://kyoriku-blogr-nextjs-prisma.vercel.app)** | **Tech Stack:** Typescript, Next.js, React, Prisma, PostgreSQL, NextAuth
+**[Live Site](https://next-blogr.vercel.app)** | **Tech Stack:** Typescript, Next.js, React, Prisma, PostgreSQL, NextAuth
 
 **Key Features:** GitHub OAuth authentication • Markdown support • Draft/publish workflow • Server-side rendering • Type-safe database queries
 
-![Home Page](./public/screenshots/home.png)
+![Home Page](./assets/screenshots/home.png)
 
 <details>
 <summary><b>Built With</b></summary>
@@ -81,9 +81,9 @@ A full-stack blogging platform where users can create and publish articles.
 <details>
 <summary><b>View More Screenshots</b></summary>
 
-![Create Post](./public/screenshots/create.png)
-![Drafts Page](./public/screenshots/drafts.png)
-![Post Detail](./public/screenshots/post.png)
+![Create Post](./assets/screenshots/create.png)
+![Drafts Page](./assets/screenshots/drafts.png)
+![Post Detail](./assets/screenshots/post.png)
 
 </details>
 
@@ -92,12 +92,12 @@ To run this project locally:
 
 1. Clone the repository
     ```bash
-    git clone https://github.com/kyoriku/blogr-nextjs-prisma.git
+    git clone https://github.com/kyoriku/next-blogr.git
     ```
 
 2. Navigate to the project directory
     ```bash
-    cd blogr-nextjs-prisma
+    cd next-blogr
     ```
 
 3. Install dependencies
