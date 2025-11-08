@@ -96,7 +96,7 @@ const EditPost: React.FC<Props> = ({ post }) => {
           </p>
         </div>
 
-        <div className="card p-8">
+        <div className="card p-4 md:p-6">
           <form onSubmit={submitData} className="space-y-6">
             {/* Title input */}
             <div>
@@ -187,7 +187,7 @@ const EditPost: React.FC<Props> = ({ post }) => {
         </div>
 
         {/* Info card */}
-        <div className="mt-6 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900/50 rounded-md p-4">
+        <div className="mt-6 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900/50 rounded-md p-4 md:p-6">
           <div className="flex gap-3">
             <div className="flex-shrink-0">
               <svg className="h-5 w-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
