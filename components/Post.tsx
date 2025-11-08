@@ -20,7 +20,7 @@ const Post: React.FC<{ post: PostProps }> = ({ post }) => {
   return (
     <article 
       onClick={() => Router.push("/p/[id]", `/p/${post.id}`)}
-      className="card p-6 cursor-pointer hover:border-teal-500/50 dark:hover:border-teal-500/50 transition-all"
+      className="card p-4 md:p-6 cursor-pointer hover:border-teal-500/50 dark:hover:border-teal-500/50 transition-all"
     >
       <div className="space-y-4">
         {/* Header with draft badge */}

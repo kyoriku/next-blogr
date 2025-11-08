@@ -60,7 +60,7 @@ const Post: React.FC<PostProps> = (props) => {
     <Layout>
       <div className="max-w-4xl mx-auto">
         {/* Post content */}
-        <article className="card p-8 md:p-12">
+        <article className="card p-4 md:p-6">
           {/* Header */}
           <header className="mb-8">
             <div className="flex items-start justify-between gap-4 mb-4">
@@ -105,7 +105,7 @@ const Post: React.FC<PostProps> = (props) => {
 
         {/* Action buttons */}
         {userHasValidSession && postBelongsToUser && (
-          <div className="mt-6 card p-6">
+          <div className="mt-6 card p-4 md:p-6">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
                 <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1">Post Actions</h3>

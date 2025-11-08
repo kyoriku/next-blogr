@@ -44,7 +44,7 @@ const Drafts: React.FC<Props> = (props) => {
     return (
       <Layout>
         <div className="max-w-4xl mx-auto">
-          <div className="card p-12 text-center">
+          <div className="card p-4 md:p-6 text-center">
             <div className="max-w-md mx-auto">
               <div className="w-16 h-16 mx-auto mb-4 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center">
                 <svg 
@@ -94,7 +94,7 @@ const Drafts: React.FC<Props> = (props) => {
             ))}
           </div>
         ) : (
-          <div className="card p-12 text-center">
+          <div className="card p-4 md:p-6 text-center">
             <div className="max-w-md mx-auto">
               <div className="w-16 h-16 mx-auto mb-4 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center">
                 <svg 
